@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dg7p1tg0jxca0"]
+
+[ext_resource type="SpriteFrames" uid="uid://b23rtxsb0s1w0" path="res://new_sprite_frames.tres" id="1_bmhwd"]
+
+[node name="Personaggio" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_bmhwd")
+animation = &"CamminaSx"
