@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://d4bsfft3becmb"]
+[gd_scene load_steps=2 format=3 uid="uid://d4bsfft3becmb"]
+
+[ext_resource type="PackedScene" uid="uid://dg7p1tg0jxca0" path="res://Scene/personaggio.tscn" id="1_er54r"]
 
 [node name="Livello" type="Node2D"]
+
+[node name="Personaggio" parent="." instance=ExtResource("1_er54r")]
+position = Vector2(344, 338)
+scale = Vector2(0.2, 0.2)
