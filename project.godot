@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Sopravvivendo"
-run/main_scene="res://Script/node_2d.tscn"
-config/features=PackedStringArray("4.1", "Mobile")
+run/main_scene="res://Scene/livello.tscn"
+config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
 [rendering]
