@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://dg7p1tg0jxca0"]
+[gd_scene load_steps=3 format=3 uid="uid://lm5mo8dneka5"]
 
-[ext_resource type="SpriteFrames" uid="uid://b23rtxsb0s1w0" path="res://new_sprite_frames.tres" id="1_bmhwd"]
+[ext_resource type="SpriteFrames" uid="uid://clj40v3ulyajr" path="res://new_sprite_frames.tres" id="1_bmhwd"]
+[ext_resource type="Script" path="res://Script/Personaggio/movimento.gd" id="1_d3bhy"]
 
 [node name="Personaggio" type="Node2D"]
+position = Vector2(114, 58)
+script = ExtResource("1_d3bhy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_bmhwd")
