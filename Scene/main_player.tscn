@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4bt7ajq8cev2"]
+
+[ext_resource type="SpriteFrames" uid="uid://clj40v3ulyajr" path="res://new_sprite_frames.tres" id="1_5nx3n"]
+[ext_resource type="Script" path="res://Script/Main_Player/movimento.gd" id="1_wvo12"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nihw5"]
+
+[node name="Main_Player" type="CharacterBody2D"]
+script = ExtResource("1_wvo12")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_5nx3n")
+animation = &"CamminaSx"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_nihw5")
+
+[node name="Camera2D" type="Camera2D" parent="."]

@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
 @export var velocita_movimento = 100 # Velocità di movimento del nemico
-var player : Node2D # Riferimento al giocatore
+var player : CharacterBody2D # Riferimento al giocatore
 
 func _ready():
 	# Prendiamo il riferimento al giocatore una volta sola per risparmiare, tanto non cambia
-	player = get_node("/root/Livello/Player")
+	player = get_node("/root/Livello/Main_Player")
 
 func _physics_process(delta):
 	# Calcolo la direzione verso il giocatore
