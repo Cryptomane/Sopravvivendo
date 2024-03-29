@@ -10,3 +10,5 @@ script = ExtResource("1_d3bhy")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_bmhwd")
 animation = &"CamminaSx"
+
+[node name="Camera2D" type="Camera2D" parent="."]
