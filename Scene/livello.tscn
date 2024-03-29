@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://d4bsfft3becmb"]
+[gd_scene load_steps=3 format=3 uid="uid://d4bsfft3becmb"]
 
 [ext_resource type="PackedScene" uid="uid://lm5mo8dneka5" path="res://Scene/personaggio.tscn" id="1_er54r"]
+[ext_resource type="PackedScene" uid="uid://csqog38pnauk2" path="res://Scene/nemico.tscn" id="2_23lqj"]
 
 [node name="Livello" type="Node2D"]
-position = Vector2(0, 15)
 
-[node name="Personaggio" parent="." instance=ExtResource("1_er54r")]
+[node name="Player" parent="." instance=ExtResource("1_er54r")]
 position = Vector2(402, 345)
 scale = Vector2(0.2, 0.2)
+
+[node name="Nemico" parent="." instance=ExtResource("2_23lqj")]
+position = Vector2(893, 96)
